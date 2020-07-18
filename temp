@@ -1,0 +1,7 @@
+function foo
+parameter p1
+  if occurs(' ', p1) > 1
+    m.ReturnValue = substr(p1, at(' ', p1, 2)+1)
+  endif
+  
+  return m.ReturnValue
